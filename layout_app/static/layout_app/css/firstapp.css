@@ -1,0 +1,260 @@
+body {
+        position: sticky ;
+        background: #FFA54A;
+        background-image: url("cat-paw.png");
+}
+.alert-secondary{
+ position: relative;
+    left: -15%;
+    margin: 0px 34%;
+    text-align: left;
+}
+.alert-primary{
+   position: relative;
+    left: -15%;
+    margin: 0px 34%;
+    text-align: left;
+}
+.alert-info{
+   position: relative;
+    left: 5%;
+    top: 100px;
+    margin: 0px 26%;
+    text-align: left;
+}
+.alert-info h2{
+    left: 390px;
+    bottom: 340px;
+    position: absolute;
+}
+.alert-info button{
+    position: relative;
+    top: 16;
+}
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 360px;
+    padding: 2.5%;
+    overflow: hidden;
+    height: 100%;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+aside img {
+    width: 200px;
+    float: left;
+}
+aside .logo{
+    color: black;
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: 20px;
+}
+
+aside h1 {
+    color: black;
+    margin-top: 50px;
+    font-size: 28px;
+}
+aside ul {
+    list-style: none;
+}
+
+aside ul li{
+    color: green;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s;
+    text-decoration: none;
+}
+aside ul li:hover, aside ul a:hover{
+    color: red;
+    text-decoration: none;
+    transform: scale(1.05)
+}
+
+main .features {
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    margin-left: 360px;
+    text-align: center;
+    width: 75%;
+}
+main .features h1 {font-size: 50px}
+main .features p {max-width: 400px; margin: 20px auto}
+
+.alert-warning {
+    top: -50px;
+    left: 140px;
+    height: 330px;
+    width: 540px;
+    margin-left: 55px;
+    text-align: left;
+}
+.alert-warning h4{
+    margin-left: -10px;
+    font-size: 20px;
+    height: 40px;
+}
+.alert-warning img{
+    position: absolute;
+    top: 16%;
+    left: 290;
+    height: 250px;
+    width: 240
+}
+
+
+aside h4{
+    color: green;
+    margin-top: 20px;
+    font-size: 15px;
+}
+select {
+  appearance: button;
+  user-select: none;
+  padding-end: 20px;
+  background-position: center right;
+  background-repeat: no-repeat;
+  border: 1px solid #AAA;
+  border-radius: 2px;
+  font-size: inherit;
+  margin: 2;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+aside h5{
+    color: black;
+}
+
+.main-page h3{
+    background: rgba(255, 255, 255, 1);
+    width: 80%;
+    position: relative;
+    color: black;
+    border: 4px solid black;
+}
+.main-page h1{
+    background: rgba(255, 255, 255, 1);
+    color: black;
+    width: 80%;
+}
+.main-page h5{
+    position: sticky;
+    background: rgba(255, 255, 255, 1);
+    color: black;
+    width: 81.3%;
+}
+
+.main-page h2{
+    position: sticky;
+    background: rgba(255, 255, 255, 1);
+    color: black;
+    left: 360px;
+    height: 70px;
+    width: 81.3%;
+}
+.main-page{
+    background: rgba(255, 255, 255, 1);
+}
+.back {
+    position: absolute;
+    left: 360px;
+  background-color: white;
+  width: 100%;
+  height: 46%;
+}
+.backh {
+    position: absolute;
+    left: 360px;
+  background-color: white;
+  width: 100%;
+  height: 32.5%;
+}
+.backm {
+    position: absolute;
+    left: 360px;
+  background-color: white;
+  width: 100%;
+}
+.border {
+position: static;
+top: -8px;
+list-style: none;
+padding: 0;
+background-color: white;
+width: 81.3%;
+}
+.border li {
+font-family: "Trebuchet MS", "Lucida Sans";
+padding: 7px 20px;
+margin-bottom: 10px;
+border-radius: 5px;
+border-left: 10px solid #f05d22;
+box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+     -2px -2px 5px 0 rgba(0,0,0,.1),
+    2px 2px 5px 0 rgba(0,0,0,.1),
+    -2px 2px 5px 0 rgba(0,0,0,.1);
+font-size: 20px;
+letter-spacing: 2px;
+transition: 0.3s all linear;
+}
+.border li:nth-child(2){border-color: #8bc63e;}
+.border li:nth-child(3){border-color: #fcba30;}
+.border li:nth-child(4){border-color: #1ccfc9;}
+.border li:nth-child(5){border-color: #493224;}
+.border li:hover {border-left: 10px solid transparent;}
+.border li:nth-child(1):hover {border-right: 10px solid #f05d22;}
+.border li:nth-child(2):hover {border-right: 10px solid #8bc63e;}
+.border li:nth-child(3):hover {border-right: 10px solid #fcba30;}
+.border li:nth-child(4):hover {border-right: 10px solid #1ccfc9;}
+.border li:nth-child(5):hover {border-right: 10px solid #493224;}
+.holiday {
+  overflow: hidden;
+  font-size: 16px;
+}
+.holiday dt, .holiday dd {
+  height: 2.5em;
+  line-height: 2.5em;
+  padding: 0 0.625em 0 0.875em;
+  color: #4C565C;
+  box-sizing: border-box;
+}
+dt {
+  width: 30%;
+  float: left;
+  clear: right;
+  background: #D3E6DD;
+  font-weight: bold;
+}
+dd {
+  width: 70%;
+  float: right;
+  margin-left: 0;
+  margin-bottom: .3125em;
+  border: 1px solid #BECFC7;
+  border-left: none;
+}
+ blockquote {
+    position: absolute;
+    left: 390px;
+    bottom: 180px;
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 5px solid #ee6e73;
+    font-style: italic;
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 18px;
+}

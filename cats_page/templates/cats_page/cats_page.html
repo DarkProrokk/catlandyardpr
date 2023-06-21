@@ -1,0 +1,84 @@
+{% extends 'layout_app/index.html' %}
+{% block title %}Котята{% endblock %}
+{% block aside %}
+<h5>Поиск</h5>
+<form method="GET">
+    <h4>Порода
+        <select name="breed_id" title="Пол">
+            <option value="breed_id">Не выбрано</option>
+            {% for br in breed %}
+            <option value="{{br.id}}">{{br.breed}}</option>
+            {% endfor %}
+        </select>
+    </h4>
+    <h4> Пол
+        <select name="gender">
+            <option value="gender">Не выбрано</option>
+            <option value="'Девочка'">Девочка</option>
+            <option value="'Мальчик'">Мальчик</option>
+        </select>
+    </h4>
+    <h4> Цвет шерсти
+        <select name="fur_id">
+            <option value="fur_id">Не выбрано</option>
+            {% for fr in fur %}
+            <option value="{{fr.id}}">{{fr}}</option>
+            {% endfor %}
+        </select>
+    </h4>
+    <button class="btn btn-success" type="submit"> Найти</button>
+</form>
+<style>
+<!--   table {-->
+<!--    width: 100%; /* Ширина таблицы */-->
+<!--    background: white; /* Цвет фона таблицы */-->
+<!--    color: white; /* Цвет текста */-->
+<!--    border-spacing: 1px; /* Расстояние между ячейками */-->
+<!--   }-->
+   td, th {
+    padding: 10px; /* Поля вокруг текста */
+   }
+  </style>
+ <body>
+ <h5>Информационная панель</h5>
+ <table>
+<!--  <colgroup>-->
+<!--    <col span="1" style="background:Khaki">&lt;!&ndash; С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы&ndash;&gt;-->
+<!--    <col style="background-color:LightCyan">&lt;!&ndash; Задаем цвет фона для следующего (одного) столбца таблицы&ndash;&gt;-->
+<!--  </colgroup>-->
+  <tr>
+    <th style="background-color:059C23">Игрушки, кол-во</th>
+    <th style="background-color:00CC00">Корм, кг</th>
+    <th style="background-color:00CC66">Наполнитель, л</th>
+  </tr>
+  <tr>
+    <td style="background-color:059C23">2</td>
+    <td style="background-color:00CC00">5</td>
+    <td style="background-color:00CC66">5</td>
+  </tr>
+</table>
+{% endblock %}
+{% block content%}
+<div class="features">
+    <h3>{{err}}</h3>
+    {% for cat in search %}
+        <div class="alert alert-warning">
+        <h3>Имя - {{cat.nickname}}</h3>
+        <h4>Порода - {{cat.breed}}</h4>
+        <h4>Пол - {{cat.gender}}</h4>
+        <h4>Цвет шерсти - {{cat.fur}}</h4>
+            {% if cat.image %}
+        <img src='/media/{{cat.image}}' width="350" height="300">
+            {% else %}
+        <img src='/media/img/not_found.jpg' width="350" height="300">
+            {%endif%}
+            <form action="{{cat.nickname}}" target="_self">
+   <button class="btn btn-success">*жмяк*</button>
+  </form>
+    </div>
+    {% endfor %}
+
+</div>
+{% endblock%}
+
+

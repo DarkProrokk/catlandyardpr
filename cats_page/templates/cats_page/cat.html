@@ -1,0 +1,23 @@
+{% extends 'layout_app/index.html' %}
+{% block title %}{{cats}}{% endblock %}
+{% block content %}
+<div class="alert alert-info">
+   <dl class="holiday">
+<h1>{{cats.nickname}}</h1>
+  <dt>Порода</dt>
+    <dd>{{cats.breed}}</dd>
+  <dt>Пол</dt>
+    <dd>{{cats.gender}}</dd>
+  <dt>Цвет шерсти</dt>
+    <dd>{{cats.fur}}</dd>
+       <img src='/media/{{cats.image}}' width="350" height="300">
+       <h2>Описание:</h2>
+<blockquote>
+       {{cats.description}}
+</blockquote>
+<form action="/cats/" target="_self">
+   <button class="btn btn-success">Вернутся назад</button>
+</form>
+</dl>
+</div>
+{% endblock %}
