@@ -44,6 +44,9 @@ class Feed(models.Model):
 
     def __str__(self):
         return self.feedname
+    class Meta:
+        verbose_name = 'Корм'  # то как будет называться таблица в админке, если будет один кот
+        verbose_name_plural = 'Корм'
 
 class Toys(models.Model):
     idtoy = models.AutoField(primary_key=True)
@@ -53,9 +56,20 @@ class Toys(models.Model):
     def __str__(self):
         return self.toyname
 
+    class Meta:
+        verbose_name = 'Игрушка'  # то как будет называться таблица в админке, если будет один кот
+        verbose_name_plural = 'Игрушки'
+
 class Filler(models.Model):
     fillid = models.AutoField(primary_key=True)
     fillkg = models.IntegerField()
+
+    def __str__(self):
+        return "Наполнитель"
+
+    class Meta:
+        verbose_name = 'Наполнитель'  # то как будет называться таблица в админке, если будет один кот
+        verbose_name_plural = 'Наполнитель'
 
 class TakeCat(models.Model):
     idtiket = models.AutoField(primary_key=True)

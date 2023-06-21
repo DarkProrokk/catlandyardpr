@@ -42,19 +42,16 @@
  <body>
  <h5>Информационная панель</h5>
  <table>
-<!--  <colgroup>-->
-<!--    <col span="1" style="background:Khaki">&lt;!&ndash; С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы&ndash;&gt;-->
-<!--    <col style="background-color:LightCyan">&lt;!&ndash; Задаем цвет фона для следующего (одного) столбца таблицы&ndash;&gt;-->
-<!--  </colgroup>-->
+
   <tr>
     <th style="background-color:059C23">Игрушки, кол-во</th>
     <th style="background-color:00CC00">Корм, кг</th>
     <th style="background-color:00CC66">Наполнитель, л</th>
   </tr>
   <tr>
-    <td style="background-color:059C23">2</td>
-    <td style="background-color:00CC00">5</td>
-    <td style="background-color:00CC66">5</td>
+    <td style="background-color:059C23">{{t_count}}</td>
+    <td style="background-color:00CC00">{{feed_kg}}</td>
+    <td style="background-color:00CC66">{{fill_kg}}</td>
   </tr>
 </table>
 {% endblock %}
